@@ -1,9 +1,10 @@
 name: Output issues
 on: issues
-
 jobs:
   issue:
     runs-on: ubuntu-latest
     steps:
       - name: Get Issue information
-        run: echo "Issue title: ${{github.event.issue.title}}"
+        run: |
+          echo "Title: ${{ github.event.issue.title }}"
+          echo "Body: ${{ github.event.issue.body }}"
