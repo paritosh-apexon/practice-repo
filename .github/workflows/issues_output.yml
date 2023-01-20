@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Get Issue information
         run: |
-        echo "Issue name: ${{ github.event.issue.title }}"
-        echo "Issube body: ${{github.event.issue.body}}"
-
+        echo "test"
+        echo "test2"
+        
 
