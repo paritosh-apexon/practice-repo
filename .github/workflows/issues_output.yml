@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get Issue information
-        runs: |
+        run: |
         echo "Issue name: ${{ github.event.issue.title }}"
         echo "Issube body: ${{github.event.issue.body}}"
 
