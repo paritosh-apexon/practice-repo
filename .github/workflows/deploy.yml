@@ -1,0 +1,23 @@
+# Lint, test and Deploy
+
+name: deploy with lint and test
+on: push
+
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Get Code
+      uses: actions/checkout@v3
+    - name: Install node js
+      uses: actions/setup-node@v3
+    - name: Install dependencies
+      run: npm ci
+    - name: Check lint
+      run: npm run lint
+    - name: Test project
+      run: npm test
+    - name: Build
+      run: npm run build
+      
+
+
