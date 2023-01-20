@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get Issue information
-        run: echo "test"
+        run: echo "Issue title: ${{github.event.issue.title}}"
