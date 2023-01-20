@@ -6,8 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get Issue information
-        run: |
-        echo "test"
-        echo "test2"
-        
-
+        run: echo "test"
